@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FCC - Survey Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main id="main">
+            <header id="header">
+                <h1 id="title">Burger Survey Form</Form></h1>
+                <p id="description">Follow the steps below to complete your order.</p>
+            </header>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name" name="name" required autofocus>
+                <br>
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" name="email" required>
+                <br>
+                <label id="number-label" for="number">Quantity:</label>
+                <input id="number" type="number" min="1" max="99" placeholder="Quantity" name="quantity">
+                <br>
+                <label id="dropdown-label" for="dropdown">Patties:</label>
+                <select id="dropdown" name="dropdown" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="simple">Simple</option>
+                    <option value="double">Double</option>
+                    <option value="triple">Triple</option>
+                </select>
+                <br>
+                <div id="radio-check-container">
+                    <fieldset>
+                        <legend>Toppings</legend>
+                        <div class="button">
+                            <input id="cheese" type="checkbox" name="cheese" value="cheese">
+                            <label for="cheese">American Cheese</label>
+                        </div>
+                        <div class="button">
+                            <input id="bacon" type="checkbox" name="bacon" value="bacon">
+                            <label for="bacon">Bacon</label>
+                        </div>
+                        <div class="button">
+                            <input id="onion" type="checkbox" name="onion" value="onion">
+                            <label for="onion">Onion Rings</label>
+                        </div>
+                        <div class="button">
+                            <input id="tomato" type="checkbox" name="tomato" value="tomato">
+                            <label for="tomato">Tomato</label>
+                        </div>
+                        <div class="button">
+                            <input id="pickles" type="checkbox" name="pickles" value="pickles">
+                            <label for="pickles">Pickles</label>
+                        </div>
+                        <div class="button">
+                            <input id="lettuce" type="checkbox" name="lettuce" value="lettuce">
+                            <label for="lettuce">Lettuce</label>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Combo</legend>
+                        <div class="button">
+                            <input id="regular-fries" value="regular-fries" type="radio" name="fries" required>
+                            <label for="regular-fries">Regular French Fries</label>
+                        </div>                        
+                        <div class="button">
+                            <input id="medium-fries" value="medium-fries" type="radio" name="fries">
+                            <label for="medium-fries">Medium French Fries</label>
+                        </div>                        
+                        <div class="button">
+                            <input id="large-fries" value="large-fries" type="radio" name="fries">
+                            <label for="large-fries">Large French Fries</label>
+                        </div>
+                    </fieldset>                    
+                    <br>
+                </div>
+                <label for="comment">Comments:</label>
+                <textarea id="comment" placeholder="Enter your comment here..." maxlength="100" rows="4"></textarea>
+                <input id="submit" type="submit" value="Next">    
+            </form>
+        </main>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
